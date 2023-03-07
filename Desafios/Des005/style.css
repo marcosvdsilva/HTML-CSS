@@ -51,7 +51,11 @@ section {
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 3.5vw;
+    font-size: 3.5vw;/* letra cresce de acordo com o tamanho da view port x 3.5 */
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -62,13 +66,25 @@ section.normal {
 section.imagem {
     background-color: rgb(51, 51, 51);
     color: white;
-
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.479);
+    background-size: cover;
+    background-attachment: fixed; /* as imagens ficam fixadas mesmo com a rolagem, crinado um efeito paralax */
 }
 
 section.imagem > p {
     display: inline-block; /* é transformado numa caixa, em que o tamanho se adapta ao tamanho do conteúdo */
     padding: 5px;
-    background-color: rgb(0, 0, 0, 0.253);
+    background-color: rgb(0, 0, 0, 0.514);
+    text-shadow: 1px 1px  0px black;
+}
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
 }
 
 footer {
