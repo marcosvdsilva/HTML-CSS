@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure laborum, asperiores recusandae excepturi dolore consectetur vitae illum dignissimos omnis, explicabo ipsam deserunt mollitia. Reprehenderit dolor rerum rem nostrum praesentium iusto?</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium rerum nesciunt consequatur. Illum quaerat repudiandae velit in officia, laborum rerum iusto similique repellat error corrupti perspiciatis sint odio tempora quisquam.</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1> Escolha uma das opcções acima </h1> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum blanditiis reiciendis distinctio necessitatibus quaerat et exercitationem veritatis voluptas aperiam beatae quis molestias, soluta ratione natus illum voluptates doloremque tempora nesciunt.</p><img src='imagens/img1.jpeg'> "frameborder="1">
+        <p>Infelizmenteb seu navegador nãom é compátivel com o documneto</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident voluptas cupiditate, quisquam, distinctio, ex modi ipsa explicabo dolorem reprehenderit in molestiae ea. Distinctio reprehenderit animi molestias voluptatibus corrupti vitae quibusdam.</p>
+</body>
+</html>
